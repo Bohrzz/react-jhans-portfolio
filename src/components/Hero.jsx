@@ -1,24 +1,24 @@
 import React from 'react';
 import { FaArrowDown, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import avatar from '../assets/no-face.png';
-import resume from "../assets/resume-img.png";
+import resume from '../assets/resume.mp4';
 
 const Hero = () => {
 
   const SOCIAL = [
     {
       id: 1,
-      link: "",
+      link: "https://github.com/Bohrzz",
       icon: <FaGithub />,
     },
     {
       id: 2,
-      link: "",
+      link: "https://www.linkedin.com/",
       icon: <FaLinkedin />,
     },
     {
       id: 3,
-      link: "",
+      link: "https://twitter.com/?lang=en",
       icon: <FaTwitter />,
     },
   ];
@@ -55,10 +55,13 @@ const Hero = () => {
     </div>
     <div className='flex flex-col items-center justify-center mt-10'>
       <img src={avatar} alt="" className='w-32 h-32 md:h-44 md:w-44 object-cover object-top bg-gradient-to-b from-teal-400 rounded-full pt-5' />
-      <h1 id='resume' className='text-gray-500 flex items-center justify-center mt-10 text-lg font-bold'>
-        Resume
-      </h1>
-      <img className='w-32 h-32 md:h-44 md:w-44 object-cover object-top rounded-full pt-5 mt-5' src={resume} alt='resume'></img>
+      <a
+        href={resume}
+        download='resume.mp4'
+        id='resume'
+        className='inline-block mt-10 px-6 py-4 font-semibold text-white bg-gradient-to-r from-teal-500 to-gray-600 rounded-lg shadow-lg'>
+        Download Resume
+      </a>
     </div>
 
     <div className='mt-10 down-arrow'>
@@ -70,4 +73,4 @@ const Hero = () => {
   </section>
 }
 
-export default Hero
+export default Hero;
