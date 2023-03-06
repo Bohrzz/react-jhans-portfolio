@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-jhans-portfolio/static/css/main.5aec1b2e.css",
+    "main.js": "/react-jhans-portfolio/static/js/main.d3f95daa.js",
+    "static/media/resume.mp4": "/react-jhans-portfolio/static/media/resume.3e1735c29f098fb730ce.mp4",
+    "index.html": "/react-jhans-portfolio/index.html",
+    "main.5aec1b2e.css.map": "/react-jhans-portfolio/static/css/main.5aec1b2e.css.map",
+    "main.d3f95daa.js.map": "/react-jhans-portfolio/static/js/main.d3f95daa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aec1b2e.css",
+    "static/js/main.d3f95daa.js"
+  ]
+}
