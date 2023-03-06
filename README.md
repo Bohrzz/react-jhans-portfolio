@@ -16,7 +16,7 @@ The website has a responsive design and is optimized for mobile and desktop devi
 # Installation
 To install and run the project locally, follow these steps:
 
-# Clone the repository: git clone https://github.com/your-username/your-portfolio.git
+# Clone the repository: git clone https://github.com/Bohrzz/react-jhans-portfolio
 Install dependencies: npm install
 Start the development server: npm start
 The website should now be running at http://localhost:3000/.
