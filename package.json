@@ -12,13 +12,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-
   "homepage": "https://Bohrzz.github.io/react-jhans-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
+    "gh-pages": "^5.0.0",
     "tailwindcss": "^3.2.7"
   }
 }
