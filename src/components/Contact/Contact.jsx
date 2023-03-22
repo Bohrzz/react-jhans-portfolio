@@ -1,8 +1,8 @@
 import React from 'react'
-import Section from './common/Section'
+import Section from '../common/Section'
 
 
-const Contact = () => {
+const Contact = (contact) => {
   return <Section title="Contact Me" subtitle="These are the ways you can get in touch with me. Id be delighted to hear from you! ">
     <div  id="contact"></div>
 <div className='p-8 text-left w-full flex items-center justify-center'>

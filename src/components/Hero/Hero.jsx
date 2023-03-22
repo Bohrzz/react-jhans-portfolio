@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaArrowDown, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import avatar from '../assets/no-face.png';
-import resume from '../assets/resume.mp4';
+import avatar from '../../assets/no-face.png';
+import resume from '../../assets/resume.mp4';
 
-const Hero = () => {
+const Hero = (hero) => {
 
   const SOCIAL = [
     {
@@ -38,7 +38,7 @@ const Hero = () => {
     <h3 className='py-3 text-2xl'> Software Engineer</h3>
     <p className='max-w-xl font-l text-gray-500'> Hello welcome to my Portfolio Website! I make cool stuff for cool people! Im 25 from Kingston Jamaica and I love Programming!
     </p>
-
+    <img src={avatar} alt="" className='w-32 h-32 md:h-44 md:w-44 object-cover object-top bg-gradient-to-b from-teal-400 rounded-full pt-5' />
     <div className='flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3'>
       {SOCIAL.map(({ id, link, icon }) => (
 

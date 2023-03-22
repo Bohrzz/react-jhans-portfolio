@@ -1,17 +1,17 @@
 import React from 'react';
-import Section from "./common/Section";
+import Section from "../common/Section";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-import p1 from "../assets/project-img.png";
+import p1 from "../../assets/project-img.png";
 
-const Portfolio = () => {
+const Portfolio = (portfolio) => {
   const projects = [
     {
       id: 1,
       image: p1,
-      title: "Sweet App",
-      github: "http://github.com/nodejs/node",
-      demo: "https://nodejs.org/en/"
+      title: "Code Genie",
+      github: "https://github.com/JuanSFL/Code_Genie",
+      demo: "https://glacial-beyond-25840.herokuapp.com/"
     },
     {
       id: 2,
@@ -52,8 +52,8 @@ const Portfolio = () => {
 
   return (
     <Section title="Portfolio" subtitle="These are all the projects that I have worked on. Most of them are from when I didn't have experience so go easy.">
-        <div id="portfolio" ></div>
-      <div  className="grid gap-8 lg:gap-14 lg:grid-cols-2">
+        <div id="portfolio"></div>
+      <div  className="grid gap-8 lg:gap-14 lg:grid-cols-2 ">
         {projects.map(({ id, image, title, github, demo }) => (
           <div key={id} className="max-w-md bg-white rounded-xl shadow-md overflow-hidden">
             <img className="w-full h-64 object-cover" src={image} alt={title} />
